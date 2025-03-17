@@ -1,5 +1,5 @@
-name = "zeew00"
-age = 25
+newList = ["zeew00", 26, "TUK"]
+newList.append("developer")
 
-print("My name is {0:s} and I am  a {1:d} years old."
-	  .format(name, age))
+for num in range(4) :
+    print("%s\n" % (newList[num]))
