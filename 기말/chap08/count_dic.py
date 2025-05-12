@@ -26,5 +26,9 @@ if __name__ == "__main__":
     print("문자\t빈도수")
     print("--------------------")
     for i in range(0, len(cntList)):
+<<<<<<< HEAD
         print(cntList[i][0], '\t', cntList[i][1])
         
+=======
+        print(cntList[i][0], '\t', cntList[i][1])
+>>>>>>> 1ac8491e9912de1e5e2dd98ec64dbb158ea36d0f
