@@ -18,5 +18,5 @@ while(True):
         print(f"push {num} into the stack")
         list.append(num)
 
-print("sorted list =", list[0::])
+print("sorted list =", list)
 print(f"최대값 : {max}, 최소값 : {min}")
