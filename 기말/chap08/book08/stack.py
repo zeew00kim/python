@@ -23,10 +23,14 @@ def error(errorStr):
     exit(1)
 
 def push(element):
+    global top, data, listLen
     if is_full() == True:
-        error("stack overflow")
+        data += [0] * listLen
+        listLen *= 2
+        top += 1
+        data[top] = element
+        print("스택 크기 두배 증가")
     else:
-        global top
         top += 1
         data[top] = element
 
@@ -82,8 +86,13 @@ for i in range(0, listLen):
 
 quickSort(listInt, 0, listLen -1)
 
-for i in range(0, listLen):
-    push(listInt[i])
+while(True):
+    init_stack()
+    for i in range(0, listLen):
+        push(listInt[i])
+    cycle = str(input("반복 여부 (yes/no) : "))
+    if cycle == "no":
+        break
 
 popCnt = int(input("pop 횟수 입력 : "))
 
