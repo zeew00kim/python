@@ -1,8 +1,8 @@
-ss = input("날짜를 입력 : ")
+def temp(*val):
+    for i in range(len(val)):
+        value = list(val)
+        for i in range(len(value)):
+            value[i] += 10
+    return value
 
-ssList = ss.split('/')
-
-print("입력한 날짜의 10년 후 : ", end="")
-print(str(int(ssList[0]) + 10) + "년", end="")
-print(ssList[1] + "월", end="")
-print(ssList[2] + "일")
+print("함수 실행 결과 :", list(map(lambda x: x**2, temp(10, 20, 30, 40))))

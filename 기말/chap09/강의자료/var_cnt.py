@@ -16,3 +16,13 @@ def dic(**para):
         print("%s --> %d명입니다." % (i, para[i]))
 
 dic(트와이스 = 9, 소녀시대 = 7, 걸스데이 = 4, 블랙핑크 = 4)
+
+# map, lambda 추가 사용 예제
+def temp(*val):
+    for i in range(len(val)):
+        value = list(val)
+        for i in range(len(value)):
+            value[i] += 10
+    return value
+
+print("함수 실행 결과 :", list(map(lambda x: x**2, temp(10, 20, 30, 40))))
