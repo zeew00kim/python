@@ -1,5 +1,5 @@
 # Python Vending Machine Project
----
+
 ## 프로젝트 개요
 
 이 프로젝트는 Python, SQLite, Tkinter를 활용하여 구현한 데스크톱 자판기 프로그램입니다.  
@@ -56,5 +56,5 @@ vending_zeew00/
 
 ```bash
 python main.py
-
+```
 ---
