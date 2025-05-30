@@ -38,7 +38,7 @@ vending_zeew00/
 - 전체 음료 재고 조회
 - 재고 보충 기능
 - 거래 로그 조회 (텍스트 파일로 저장된 로그 출력)
-
+---
 ## DB 테이블 구성 (init_schema.sql)
 
 - `inventory` : 음료 목록 (id, name, price, stock)
