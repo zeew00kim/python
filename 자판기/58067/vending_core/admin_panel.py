@@ -84,7 +84,7 @@ class AdminView:
         outer_frame = tk.Frame(self.master, bg="#cdeffc")
         outer_frame.pack(expand=True)
 
-        tk.Label(outer_frame, text="현재 음료 재고 현황", font=("맑은 고딕", 12, "bold"),
+        tk.Label(outer_frame, text="음료 재고 현황", font=("맑은 고딕", 12, "bold"),
                  fg="blue", bg="#cdeffc").grid(row=0, column=0, columnspan=3, pady=10)
         tk.Label(outer_frame, text="화폐 시재 현황", font=("맑은 고딕", 12, "bold"),
                  fg="blue", bg="#cdeffc").grid(row=0, column=3, columnspan=2)

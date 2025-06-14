@@ -14,7 +14,7 @@ class UserView:
         self.master.title("사용자 모드")
         self.master.geometry("630x500")
         self.master.resizable(False, False)
-        self.master.configure(bg="#cdeffc")  # 연한 하늘 배경
+        self.master.configure(bg="#cdeffc")
 
         self.drink_model = Drink()
         self.cash_manager = CashManager()
@@ -46,7 +46,7 @@ class UserView:
 
         cash_frame = tk.Frame(container, bg="#cdeffc")
         cash_frame.grid(row=5, column=0, columnspan=4)
-        for i, denom in enumerate([1000, 500, 100, 10]):
+        for i, denom in enumerate([1000, 500, 100, 50]):
             def make_insert_command(d):
                 return lambda: self.insert_money(d)
             btn = tk.Button(cash_frame, text=f"{denom}원", width=10, height=2,

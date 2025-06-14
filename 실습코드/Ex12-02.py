@@ -2,8 +2,6 @@ from tkinter import *
 import math
 import random
 
-
-## 클래스 선언
 class Shape:  # 슈퍼 클래스
     color, width = '', 0
     shX1, shY1, shX2, shY2 = [0] * 4  # 도형을 포함하는 두 점
@@ -39,7 +37,6 @@ class Rectangle(Shape):  # 서브 클래스
         squreList.append(canvas.create_line(sx2, sy2, sx2, sy1, fill=self.color, width=self.width))
         squreList.append(canvas.create_line(sx2, sy1, sx1, sy1, fill=self.color, width=self.width))
         self.objects = squreList  # 선분 리스트(=사각형)을 objects에 넣음.
-
 
 class Circle(Shape):  # 서브 클래스
     objects = None
@@ -114,7 +111,6 @@ def deleteObject(event, objType):  # 마지막 그린 원제거
                 del (shapes[i])
                 break
 
-
 def deleteCircle(event, objType):  # 마지막 그린 원제거
     global shapes
     if len(shapes) != 0:  # 화면에 도형이 있으면 마지막 도형 제거
@@ -134,14 +130,11 @@ def deleteRectangle(event, objType):  # 마지막 그린 사각형 제거
                 del (shapes[i])
                 break
 
-
-## 전역  변수 선언
 shapes = []  # 화면에 그려진 전체 도형 리스트
 window = None
 canvas = None
 x1, y1, x2, y2 = None, None, None, None  # 클릭한 두 지점의 X, Y
 
-## 메인 코드 부분 ##
 if __name__ == "__main__":
     window = Tk()
     window.title("연습 문제")

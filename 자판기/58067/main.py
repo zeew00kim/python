@@ -1,6 +1,14 @@
 import tkinter as tk
 from tkinter import messagebox
 
+"""
+본 프로젝트에서 사용되는 
+DB 파일(vending.sqlite3)과 초기 스키마 파일(init_schema.sql)은 
+프로그램 실행 경로 기준 "vending_data/" 폴더 안에 위치합니다.
+
+관리자 모드 접근 시 입력 PW : 2022158067
+"""
+
 # 외부 모듈 호출 실패 시 예외처리
 try:
     from vending_core.user_view import UserView
